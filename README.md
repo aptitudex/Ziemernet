@@ -1,0 +1,2 @@
+# Ziemernet
+Scavenger Hunt CTF!
