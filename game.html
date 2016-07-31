@@ -1,66 +1,94 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!- Hey there! Peeking under the hood? Feel free to copy any of this code for your own website! It's very basic and is used by many. ->
+<!DOCTYPE HTML>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>ZIEMER.NET</title>
-<link rel="Shortcut Icon" href="/favicon.ico">
-
+<title>aptitudex</title>
+<link rel="hmm" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|VT323" rel="stylesheet">
 <style type="text/css">
-
 body {
 color:#000000;
-font-family: "Times New Roman", sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
 font-size:18pt;
 background:#FFFFFF;
 margin:0;
 padding:0;
 }
+@keyframes catappears {
+  0% {
+    transform: scale(0.5);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes niftytext {
+  0% {
+     opacity: 0;
+  60% {
+     opacity: .5;
+  100% {
+     opacity: 1;
+  }
+}
+}
+}
 
+@keyframes supernifty {
+  0% {
+     opacity: 0;
+  60% {
+     opacity: .5;
+  100% {
+     opacity: 1;
+  }
+  }
+  }
+}
+h2 {
+  font-family: 'VT323', monospace;
+}
 a:link, a:visited {
 color:#000000;
 }
-
 a:active, a:hover {
 color:#888888;
 }
-
 img {
 border:0px;
 }
-
 #header {
+animation-duration: 2.5s;
+animation-name: catappears;
 text-align:center;
+font-size:50pt;
 height:150px;
 }
-
 #header img {
 margin:auto;
 }
-
 #container {
+margin-left:10px;
+margin-right:10px;
 position:relative;
 width:100%;
-}
-
-#content {
-margin-left:300px;
-padding:5px;
-}
-
-#Column {
-position:absolute;
-left:0;
-top:0;
-width:300px;
 padding:20px;
-text-align:left;
 }
-
-#Column ul {
-list-style-type:none;
-margin:0;
-padding:0 5px;
+#content {
+padding:30px;
+}
+#title {
+  animation-duration: .5s;
+  animation-name: niftytext;
+}
+#subtitle {
+  animation-duration: 1s;
+  animation-name: supernifty;
 }
 
 </style>
@@ -69,44 +97,23 @@ padding:0 5px;
 </head>
 <body>
 <div id="header">
-<img src="http://i.cubeupload.com/LOZWI9.png" alt="The game">
+<img src="https://octodex.github.com/images/Robotocat.png" alt="The Robotocat" width="286" height="286"/>
 </div>
+
+
 <br>
 <br>
 <br>
-	
+
 <div id="container">
 <div id="content">
 <p>
-<b> THE GAME </b><br>
-You're here, and you're ready to play. Before we get started, go check out <a href="http://www.ziemer.net/scavengerhunt/form.html">this</a> link and follow the instructions. After you see your name appear on the "scoreboard" page, you are free to begin playing. The reason we're having you email us first is simply so it's easier to keep track of you when you email one of the major flags. Also, keep in mind that to be eligible for a prize, you need to be willing to supply an address so I can mail it to you. If you'd like, you can include it in your email. 
+
+<center><h2><b> <div id="title"></div>Welcome to HOME. I am known on the internet as </i> APTITUDEX, ICEY29, and sometimes SAM. </i> </b> </h2></div></center>
+  <div id= "subtitle">My hobbies include making pointless GitHub repositories, goofing around with Unity 3D, catching Pokemon, and web design. <br> I like to attempt big projects, go on bike rides, and lurk Scratch's 'Advanced Topics' forums. <br>
+  This website is a really big work-in-progress. Please check back later!</div>
+
 </p>
-</div>
-<div id="Column">
-<ul>
-
-<!--COLUMN-->
-
-<li><b>The Scavenger Hunt</b>
-<ul>
-<li><a href="http://www.ziemer.net/scavengerhunt/game.html">GAME</a></li>
-<li><a href="http://www.ziemer.net/scavengerhunt/Scoreboard.html">SCOREBOARD</a></li>
-<li><a href="http://www.ziemer.net/scavengerhunt/rules.html">RULES</a></li>
-<li><a href="http://www.ziemer.net/scavengerhunt/FAQ.html">FAQ</a></li>
-</ul>
-</li>
-<br>
-<br>
-<br>
-<li>
-<ul>
-<li><a href="http://www.ziemer.net/scavengerhunt/staff.html">Staff</a></li>
-</ul>
-</li>
-<br>
-
-
-</ul>
 </div>
 
 </ul>
